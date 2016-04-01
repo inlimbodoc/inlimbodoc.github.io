@@ -1,0 +1,42 @@
+
+html{
+  height: 100%;
+  width: 100%;
+}
+
+body{
+  width: 100%;
+  height: 100%;
+  font-family: $cabin;
+  color: $main-color;
+  line-height: 150%;
+}
+
+p{
+  font-size: 14px;
+}
+
+a:visited, a:link{
+  color: $main-color;
+  text-decoration: none;
+  display: inline-block;
+  margin: 0 10px;
+  &:hover{
+    color: $main-color-transp-3;
+  }
+}
+
+hr.divider{
+  width: 20%;
+  border: 1px solid $secondary-color;
+  margin-top: 10%;
+  margin-bottom: 10%;
+}
+
+h1{
+  margin: 4% 0;
+}
+
+.container{
+  @include outer-container();
+}

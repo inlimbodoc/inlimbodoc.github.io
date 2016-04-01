@@ -1,0 +1,42 @@
+section#updates{
+  width: 100%;
+  background-color: #ECF0F1;
+  padding: 4% 0;
+}
+
+section.updates{
+  padding: 4% 0;
+  h1{
+    text-align:center;
+  }
+}
+
+section.blog-posts{
+  @include span-columns(6);
+  @include shift(3);
+}
+
+section.blog-post{
+  padding: 10% 0;
+  border-bottom: 1px solid #B5B5B5;
+
+  .read-more{
+    color: rgb(171, 171, 171);
+  }
+
+  a:hover{
+    color: $secondary-color;
+  }
+  
+  h3{
+    margin: 0;
+    padding: 0;
+  }
+
+  .date{
+    font-size: .7em;
+    margin: 0;
+    padding:0;
+    color: $secondary-color;
+  }
+}

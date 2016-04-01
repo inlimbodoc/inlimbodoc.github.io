@@ -1,0 +1,16 @@
+
+section.about{
+  @include span-columns(6);
+  @include shift(3);
+  
+  @include media($mobile){
+    @include span-columns(10);
+    @include shift(1);
+  }
+
+  padding: 5% 0;
+
+  h1{
+    text-align:center;
+  }
+}

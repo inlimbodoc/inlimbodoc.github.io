@@ -1,0 +1,65 @@
+section.hero{
+  width: 100%;
+  height: 100%;
+  background-size: cover;
+  background-color: black;
+  background-repeat: no-repeat;
+}
+
+.first-hero{
+  background-image: url('https://images.unsplash.com/uploads/1413240567149aecde9a1/c0dce58d?ixlib=rb-0.3.5&q=80&fm=jpg&crop=entropy&w=1080&fit=max&s=db798533663a532d0fbe56557b19bcc1');
+}
+
+.second-hero{
+  background-image: url(../assets/hero-min.jpg) !important;
+  height: 40% !important;
+  background-attachment: fixed;
+  background-position: center center;
+}
+
+header{
+  text-align: center;
+  padding-top: 4%;
+  background-color: rgba(0, 0, 0, 0.3);
+  color: white;
+  padding: 2%;
+}
+
+section.logo{
+  color: white;
+  padding: 2%;
+  font-size: 45px;
+  font-weight: 700;
+
+  a{
+    display:block;
+    color: white;
+  }
+  img{
+    width: 35%;
+  }
+}
+
+nav{
+  a:link, a:visited{
+    color: white;
+    &:hover{
+      color: transparentize(white, .2);
+    }
+  }
+}
+
+nav.post-nav{
+  a:link, a:visited{
+    color: $main-color;
+    &:hover{
+      color: transparentize($main-color, .2);
+    }
+  }
+}
+
+section.doc{
+  @include span-columns(4);
+  @include shift(4);
+  padding-top: 5%;
+}

@@ -1,0 +1,54 @@
+footer{
+  padding: 5% 0;
+  border-top: 1px solid #ececec;
+  text-align: center;
+}
+
+
+section.social{
+  @include span-columns(10);
+  @include shift(1);
+
+  text-align: center;
+
+  @include media($mobile){
+    @include span-columns(10);
+    @include shift(1);
+    text-align:center;
+  }
+
+  h3{
+    display: inline-block;
+    margin-right: 20px;
+  }
+
+  a{
+    display: inline-block;
+  }
+
+  i{
+    margin-right: 5px;
+    font-size: 1.3em !important;
+    vertical-align: middle;
+  }
+
+  a:link, a:visited{
+    color: $main-color-transp-3;
+  }
+
+  a.twitter:hover{
+    color: #59ABE3;
+  }
+
+  a.mail:hover{
+    color: $secondary-color;
+  }
+
+  a.facebook:hover{
+    color: #1F3A93;
+  }
+
+  a.soundcloud:hover{
+    color: #F9690E;
+  }
+}

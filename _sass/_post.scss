@@ -1,0 +1,19 @@
+section.post{
+  @include span-columns(6);
+  @include shift(3);
+  margin-top: 6%;
+  margin-bottom: 4%;
+  padding-bottom: 4%;
+
+  object{
+    width: 100%;
+  }
+
+  a:link, a:visited{
+    color: $secondary-color;
+    &:hover{
+      text-decoration: underline;
+    }
+  }
+
+}

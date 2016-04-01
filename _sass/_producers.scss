@@ -1,0 +1,45 @@
+.producers{
+  //padding: 5% 0;
+  
+  h1{
+    text-align: center;
+  } 
+}
+
+section#producers{
+  width: 100%;
+  background-color: transparentize(#ECF0F1, .5);
+  padding: 4% 0;
+}
+
+section.producer{
+  @include span-columns(3);
+  @include shift(2);
+
+  @include media($mobile){
+    @include span-columns(10);
+    @include shift(1);
+  }
+
+  .producer-links{
+    text-align: center;
+  }
+
+  img{
+    width: 50%;
+    display: block;
+    margin: 0 auto;
+    border-radius: 50%;
+  }
+  
+  h3{
+    text-align:center;
+  }
+
+  i{
+    font-size: 2em;
+    &:hover{
+      color: $secondary-color;
+    }
+  }
+}

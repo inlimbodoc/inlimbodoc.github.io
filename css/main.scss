@@ -1,0 +1,35 @@
+---
+---
+@charset "utf-8";
+
+//$visual-grid: true;
+$visual-grid-color: #666;
+
+// Our variables
+$cabin: 'Cabin', Helvetica Neue, Arial, sans-serif;
+
+$main-color : rgba(46, 55, 54, 1);
+$main-color-transp-3: rgba(46, 55, 54, 5);
+
+$secondary-color: #6C7A89;
+
+$mobile: new-breakpoint(max-width 700px 12);
+
+
+
+// Import partials from `sass_dir` (defaults to `_sass`)
+@import
+        "bourbon/bourbon",
+        "neat/neat",
+        "base",
+        "layout",
+        "header",
+        "normalize",
+        "about",
+        "producers",
+        "updates",
+        "post",
+        "footer"
+;
+
+
