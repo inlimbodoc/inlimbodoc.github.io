@@ -15,6 +15,10 @@ $secondary-color: #6C7A89;
 
 $mobile: new-breakpoint(max-width 700px 12);
 
+video {
+  width: 100%;
+}
+
 
 
 // Import partials from `sass_dir` (defaults to `_sass`)
@@ -31,5 +35,3 @@ $mobile: new-breakpoint(max-width 700px 12);
         "post",
         "footer"
 ;
-
-
