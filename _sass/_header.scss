@@ -59,7 +59,7 @@ nav.post-nav{
 }
 
 section.doc{
-  @include span-columns(4);
-  @include shift(4);
+  @include span-columns(6);
+  @include shift(3);
   padding-top: 5%;
 }
